@@ -35,7 +35,7 @@ div{
 	font-size:1.3em;
 	text-align: center;
 	line-height: 32px;
-	background-color: orange;
+	background-color: red;
 	border: transparent solid 1px;
 	border-bottom: solid lightgrey 2px;
 }
@@ -59,7 +59,7 @@ div{
 	width: 118px;
 	height: 118px;
 	display: inline-block;
-	background-color: orange;
+	background-color: red;
 	float: left;
 }
 .mid .mid_ipt {
@@ -80,7 +80,7 @@ div{
 .mid .mid_txt {
 	width: 138px;
 	height: 100%;
-	background-color: orange;
+	background-color: red;
 	float: left;
 	margin-right: 10px;
 	color: white;
@@ -128,11 +128,11 @@ div{
 	height: 50%;
 	margin: 20% auto;
 	margin-bottom: 10px;
-	background-color: orange;
+	background-color: red;
 }
 .btm .b_atxt{
 	margin-bottom: 5px;
-	background-color: orange;
+	background-color: red;
 }
 
 
@@ -141,5 +141,16 @@ div{
 	font-style: normal;
 	font-weight: normal;
 	content: "\e007";
+}
+.mid_txt:hover {
+	box-shadow: 0 3px #ab3c3c;
+	margin-top: 2px;
+}
+
+.mid_txt:active {
+	box-shadow: 0 0px #ab3c3c;
+	margin-top: 2px;
+	height: 33px;
+	background-color: #ab3c3c;
 }
 
