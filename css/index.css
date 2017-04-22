@@ -1,0 +1,31 @@
+div{
+	box-sizing: border-box;
+}
+.bd{
+	width:500px;
+	height:300px;
+}
+.head{
+	width:500px;
+	height:200px;
+	background:#339966;
+	text-align: center;
+	line-height:200px;
+	font-size:40px;
+	color:white;
+}
+.body{
+	width:500px;
+	height:150px;
+	display: flex;
+	background:gray;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.text,
+.texttrue{
+	width:250px;
+	height:150px;
+	display: flex;
+	flex-direction: column;
+}
