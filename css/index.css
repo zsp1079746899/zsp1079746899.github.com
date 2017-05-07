@@ -16,7 +16,7 @@ div{
 }
 .body{
 	width:500px;
-	height:150px;
+	height:180px;
 	display: flex;
 	background:gray;
 	flex-direction: row;
