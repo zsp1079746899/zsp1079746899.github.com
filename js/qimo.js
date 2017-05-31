@@ -1,0 +1,1 @@
+onmouseover: expression(onmouseover=function (){this.style.borderColor ='blue';this.style.color='red';this.style.backgroundColor ='yellow'}); 
