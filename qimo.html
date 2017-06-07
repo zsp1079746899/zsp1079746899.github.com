@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <link rel='stylesheet' type='text/css' href='css/qimo.css'>
+      <script type="text/javascript" src="js/jquery/jquery-3.2.1.js"></script>
+      
       <link rel="stylesheet" href="http://at.alicdn.com/t/font_j6nbwdgd6etgldi.css">  
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>期末大作业</title>
@@ -54,9 +56,7 @@
                     <div class='search-qian'>
                         <div class='search-li'>
                             <i class="iconfont icon-sousuo_sousuo" style='color:#2FB3FF'></i>
-                            <input type='text' style='dispaly:none' class='text2' value='择天记'
-                                   onfocus="if(value=='择天记'){value=''}"
-                                   onblur="if(value==''){value='择天记'}"/>
+                            <input type='text' style='dispaly:none' class='text2' value='择天记'>
                         </div>
                         <div class='search-yi'></div>
                     </div>
@@ -97,13 +97,32 @@
                 <div class='guide-title'>教育</div>
                 <div class='guide-title'>游戏</div>
             </ul>
-            <div class='top-nav-more'>
-                <div class='guide-title'>更多
-                    <i class="iconfont icon-xiajiantou1" style='color:#878787'></i>
-                </div>
+            <div class='top-nav-more guide-title'>更多
+                <ul>
+                    <li><a>VR</a></li>
+                    <li><a>生活</a></li>
+                    <li><a>排行</a></li>
+                </ul>
            </div>
         </div>
-        <div class='top-nav-right guide-title'>下载</div> 
+        <div class='top-nav-right guide-title'>下载
+            <div class='uul'>
+                  <div class='g-nav-app-intro'>
+                    <div class='g-nav-app'>
+                        <img src='img/0510000058D0FEA1ADC0AE058F099020.jpg'>
+                        <h3><a>优酷移动APP</a></h3>
+                        <span>轻松扫一扫，精彩随时看</span>
+                        <a class='g-nav-app-btn'>了解详情</a>
+                    </div>
+                    <div class='g-anv-iku'>
+                        <img src='img/05100000585A30CB67BC3D2037022435.png'>
+                        <h3><a>优酷客户端</a></h3>
+                        <span>Windows版 & Mac版</span>
+                        <a class='g-nav-app-btn'>了解详情</a>
+                    </div>
+                  </div>  
+            </div>    
+        </div> 
     </div>
     <div class='s-body'>
         <div class='yk-content'>
@@ -114,64 +133,144 @@
                         <div class='c'>
                            <div class='yk-row'>
                                <div class='yk-col8'>
-                                   <div class='yk-pack1 md20'>
+                                   <div class='yk-pack1 md20 qi'>
                                        <div class='p-thumb'>
                                            <img class='lg-pic' src='img/05100000591F8A46ADC0AE06B403F65B.jpg'>
                                        </div>
-                                       <div class='caption text8'><择天记>长生抗命救有容 小分队遭圣后追捕</div>
-                                       <div class='caption-body'>
+                                       <div class='time'><择天记>长生抗命救有容 小分队遭圣后追捕</div>
+                                       <div class='sm-play'>
                                            <div class='caption text8'><择天记>长生抗命救有容 小分队遭圣后追捕</div>
-                                           <div class='p-play'>鹿晗星霜之下逆势择天</div>
-                                           <div class='p-play'>33.6亿次播放 11.3万次播放</div>
-                                           <button class='wrap-btn'>立刻播放</button>
+                                           <div class='p-play mr-6'>鹿晗星霜之下逆势择天</div>
+                                           <div class='p-play mr-6'>33.6亿次播放 11.3万次播放</div>
+                                           <div class='wrap-btn mr-6'>立刻播放</div>
                                        </div>    
                                    </div>
-                               </div>
-                                   <div class='yk-col4'>
-                                       <div class='yk-pack md20'>
-                                           <div class='p-thumb'>
-                                               <img class='sm-pic' src='img/btv.jpg'>
-                                               <div class='time'>
-                                                   <span class='time-style'>02:10</span>
-                                               </div>
+                                   <div class='yk-col4 pe'>
+                                       <div class='yk-pack'>
+                                           <div class='p-thumb yi'>
+                                               <img class='sm-pic' src='img/05100000592E3331ADB91207420C76E1.jpg'>
+                                               <div class='time'><热血长安>公子命丧青楼</div>
                                                <div class='sm-play'>
-                                                  <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                                 <div class='caption text8'><热血长安>公子命丧青楼</div>
+                                                 <div class='p-play mr-6'>剑灵作祟 疑点重重</div>
+                                                 <div class='p-play mr-6'>82.3亿次播放 6.5万次播放</div>
+                                                 <div class='wrap-btn mr-6'>立刻播放</div>
                                                </div>
                                            </div>
                                        </div>
                                    </div>
-                                   <div class='yk-col4'>
-                                       <div class='yk-pack md20 mr0'>
-                                           <div class='p-thumb'>
-                                               <img class='sm-pic' src='img/05410408591DB0AE1E58375CCF031C76.jpg'>
-                                               <div class='time'>
-                                                   <span class='time-style'>01:18</span>
-                                               </div>
+                                   <div class='yk-col4-1 pe'>
+                                       <div class='yk-pack mr0'>
+                                           <div class='p-thumb yi'>
+                                               <img class='sm-pic' src='img/05100000592E13ECADC0AE06B30E9E6A.gif'>
+                                               <div class='time'>工人回收啤酒罐徒手灌酒</div>
                                                <div class='sm-play'>
-                                                   <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                                 <div class='caption text8'>工人回收啤酒罐徒手灌酒</div>
+                                                 <div class='p-play mr-6'>涉事公司已报警</div>
+                                                 <div class='p-play mr-6'>21.0万次播放 221次播放</div>
+                                                 <div class='wrap-btn mr-6'>立刻播放</div>
                                                </div>
                                             </div>
                                        </div>
+                                    </div>
                                 </div>
-                              
+                                <div class='yk-col4 pe'>
+                                    <div class='yk-pack md20'>
+                                           <div class='p-thumb yi'>
+                                               <img class='sm-pic' src='img/05100000592E10958B3D05052E0C7AA4.jpg'>
+                                               <div class='time'><龙珠传奇>康熙易欢变飞贼</div>
+                                               <div class='sm-play'>
+                                                 <div class='caption text8'><龙珠传奇>康熙易欢变飞贼</div>
+                                                 <div class='p-play mr-6'>夜闯裘贵庄园盗官银</div>
+                                                 <div class='p-play mr-6'>13.2亿次播放 3.5万次播放</div>
+                                                 <div class='wrap-btn mr-6'>立刻播放</div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                    <div class='yk-pack md20'>
+                                           <div class='p-thumb yi'>
+                                               <img class='sm-pic' src='img/05150000592E081EADB912072F0210C7.jpg'>
+                                               <div class='time'>[乘风破浪]十亿票房韩式喜剧</div>
+                                               <div class='sm-play'>
+                                                 <div class='caption text8'>[乘风破浪]十亿票房韩式喜剧</div>
+                                                 <div class='p-play mr-6'>彭于晏拿未婚妻考验邓超</div>
+                                                 <div class='p-play mr-6'>2,741万次播放 5,240万次播放</div>
+                                                 <div class='wrap-btn mr-6'>立刻播放</div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                    <div class='yk-pack'>
+                                           <div class='p-thumb yi'>
+                                               <img class='sm-pic' src='img/05100000592D93DC8B3D0505220907A9.jpg'>
+                                               <div class='time'><寒武纪>周冬雨身陷三角恋</div>
+                                               <div class='sm-play'>
+                                                 <div class='caption text8'><寒武纪>周冬雨身陷三角恋</div>
+                                                 <div class='p-play mr-6'>大叔鲜肉争相献爱</div>
+                                                 <div class='p-play mr-6'>4.0亿次播放 42.2万次播放</div>
+                                                 <div class='wrap-btn mr-6'>立刻播放</div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                    
+                                </div>
+                                <div class='yk-col8'>
+                                     <div class='gao md20'>
+                                     
+                                     </div> 
+                                     <div class='yk-col4 pe'>
+                                       <div class='yk-pack md20'>
+                                           <div class='p-thumb yi'>
+                                               <img class='sm-pic' src='img/05150000592E0992ADB9120736092247.jpg'>
+                                               <div class='time'><长城>王俊凯引怪兽进城</div>
+                                               <div class='sm-play'>
+                                                 <div class='caption text8'><长城>王俊凯引怪兽进城</div>
+                                                 <div class='p-play mr-6'>饕餮倾巢出动攻陷皇宫</div>
+                                                 <div class='p-play mr-6'>628万次播放 3,234万次播放</div>
+                                                 <div class='wrap-btn mr-6'>立刻播放</div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class='yk-pack '>
+                                           <div class='p-thumb yi'>
+                                               <div class='p-thumb-taglt'>
+                                                   <span class='ico-it'>首播</span>
+                                               </div>
+                                               <img class='sm-pic' src='img/05150000592E09C8ADC0AE06C209CFC4.jpg'>
+                                               <div class='time'>[我想和你唱]梁咏琪险飙泪</div>
+                                               <div class='sm-play'>
+                                                 <div class='caption text8'>[我想和你唱]梁咏琪险飙泪</div>
+                                                 <div class='p-play mr-6'>迷弟提星爷戳中梁咏琪泪点</div>
+                                                 <div class='p-play mr-6'>4,266万次播放 940次播放</div>
+                                                 <div class='wrap-btn mr-6'>立刻播放</div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class='yk-col4-1 pe mid'>
+                                       <div class='yk-pack mr0'>
+                                           <div class='p-thumb yi'>
+                                               <img class='sm-pic' src='img/200-220-0531.jpg'>
+                                               <div class='sm-play'>
+                                                    <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                                   </div>
+                                               </div>
+                                               <div class='mid-foot'>
+                                                   <span class='mid-info'>脑洞男人帮拼脑汁</span>
+                                                   <span class='mid-more'>详细信息>></span>
+                                               </div>
+                                        </div>
+                                        
+                                    </div>
+                            </div>
+                            </div>
+                            </div>
                                
-                               
+            
                                
                             </div>
                        </div>
                     </div>
-                </div>
-               </div>
-            </div>
-        
-                       
-                       
-                    
-                                   
-                                   
-                                   
-                                   
-                                   
+                </div>                                 
            <div class='mod mod-new' style='dispaly:block;'>
             <div class='yk-row'>
                 <div class='yk-col20'>
@@ -191,7 +290,7 @@
                                 </div>
                             </div>
                             <div class='yk-col4 -ma20'>
-                                <div class='text4 '>产品大全</div>
+                                <div class='text4 '>产品大全 ></div>
                             </div>
                         </div>
                         <div class='c'>
@@ -386,7 +485,7 @@
                 </div>
             </div>          
             </div>
-            <div class='mod mod-new' style='dispaly:block;'>
+            <div class='mod mod-new' >
             <div class='yk-row'>
                 <div class='yk-col20'>
                    <div class='mod'>
@@ -489,7 +588,7 @@
                                        <div class='p-play'>萨摩易容诱敌进局</div>
                                    </div>
                                 </div>
-                               <div class='yk-col4'>
+                               <div class='yk-col4-1'>
                                    <div class='yk-pack he47 md20'>
                                        <div class='p-thumb'>
                                            <img class='sm-pic' src='img/05150000591E64A7ADC0AEF7CD020D9F.jpg'>
@@ -523,78 +622,22 @@
                                <div class='yk-col8'>
                                    <div class='yk-pack1 ma'>
                                        <div class='p-thumb'>
-                                           <img class='lg-pic' src='img/050C00005923B1DCADC0B007E4009D49.jpg'>
+                                           <img class='lg-pic' src='img/050C0000591C1A48ADC0AE074E04F1B7.jpg'>
                                            <div class='time'>
-                                               <span class='time-style'>更新至36</span>
-                                           </div>
-                                           <div class='sm-play'>
-                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
-                                           </div>
-                                       </div>
-                                       <div class='p-info'>龙珠传奇</div>
-                                       <div class='p-play'>蠢哭！杨紫龙床迷晕小皇帝 竟然向“龙小弟”炫耀</div>
-                                   </div>
-                                </div>
-                               <div class='yk-col4'>
-                                   <div class='yk-pack he47 md20'>
-                                       <div class='p-thumb'>
-                                           <img class='sm-pic' src='img/051000005923A1A98B3D0504A506B25B.gif'>
-                                           <div class='time'>
-                                               <span class='time-style'>更新至42</span>
-                                           </div>
-                                           <div class='sm-play'>
-                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
-                                           </div>
-                                       </div>
-                                       <div class='p-info'>择天记 TV版</div>
-                                       <div class='p-play'>长生伤势恢复又双双复发</div>
-                                   </div>
-                                   <div class='yk-pack he47'>
-                                       <div class='p-thumb'>
-                                           <img class='sm-pic' src='img/0515000059142432ADB9125B9D01969A.jpg'>
-                                           <div class='time'>
-                                               <span class='time-style'>42集全</span>
-                                           </div>
-                                           <div class='sm-play'>
-                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
-                                           </div>
-                                       </div>
-                                       <div class='p-info'>欢乐颂</div>
-                                       <div class='p-play'>五美上线生活新挑战</div>
-                                   </div>
-                                </div>
-                               <div class='yk-col4'>
-                                   <div class='yk-pack he47 md20'>
-                                       <div class='p-thumb'>
-                                           <img class='sm-pic' src='img/05150000592246DAADC0AEF7A108E429.jpg'>
-                                           <div class='time'>
-                                               <span class='time-style'>更新至14</span>
-                                           </div>
-                                           <div class='sm-play'>
-                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
-                                           </div>
-                                       </div>
-                                       <div class='p-info'>寒武纪</div>
-                                       <div class='p-play'>周冬雨霸气壁咚小猴子</div>
-                                   </div>
-                                   <div class='yk-pack he47'>
-                                       <div class='p-thumb'>
-                                           <img class='sm-pic' src='img/05150000591E5D92ADB9123E4100C728.jpg'>
-                                           <div class='time'>
-                                               <span class='time-style'>更新至34</span>
+                                               <span class='time-style'>更新至43</span>
                                            </div>
                                            <div class='sm-play'>
                                                <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
                                            </div>
                                        </div>
                                        <div class='p-info'>热血长安 第二季</div>
-                                       <div class='p-play'>萨摩易容诱敌进局</div>
+                                       <div class='p-play'>名侦探萨摩回归 长安第一侦探团热血重燃</div>
                                    </div>
                                 </div>
                                <div class='yk-col4'>
                                    <div class='yk-pack he47 md20'>
                                        <div class='p-thumb'>
-                                           <img class='sm-pic' src='img/05150000591E64A7ADC0AEF7CD020D9F.jpg'>
+                                           <img class='sm-pic' src='img/05150000591C18EB8B3D060A060C6FC1.jpg'>
                                            <div class='time'>
                                                <span class='time-style'>更新至20</span>
                                            </div>
@@ -602,33 +645,462 @@
                                                <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
                                            </div>
                                        </div>
-                                       <div class='p-info'>职场是个技术活</div>
-                                       <div class='p-play'>应采儿职场女王pk菜鸟</div>
+                                       <div class='p-info'>寒武纪</div>
+                                       <div class='p-play'>偶像男神贺军翔勇斗黑帮</div>
                                    </div>
                                    <div class='yk-pack he47'>
                                        <div class='p-thumb'>
-                                           <img class='sm-pic' src='img/0515000059224BEBAD9E076E730DC153.jpg'>
+                                           <img class='sm-pic' src='img/05150000591C19338B3D0504B300F1A3.jpg'>
                                            <div class='time'>
-                                               <span class='time-style'>更新至17</span>
+                                               <span class='time-style'>18集全</span>
                                            </div>
                                            <div class='sm-play'>
                                                <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
                                            </div>
                                        </div>
-                                       <div class='p-info'>囧女翻身之嗨如花 第二季</div>
-                                       <div class='p-play'>祝绪丹诠释励志女王</div>
+                                       <div class='p-info'>囧女翻身之嗨如花 第一季</div>
+                                       <div class='p-play'>“大师兄”和玄女的爆笑爱情</div>
                                    </div>
                                 </div>
-                               
-                               
+                               <div class='yk-col4'>
+                                   <div class='yk-pack he47 md20'>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/05150000591C1A928B6C580453092815.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>24集全</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>鲜肉老师</div>
+                                       <div class='p-play'>人在江湖中 基友少不了</div>
+                                   </div>
+                                   <div class='yk-pack he47'>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/0515000058C74B63ADC0B005BD0066A8.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>17集全</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>愿有人陪你颠沛流离</div>
+                                       <div class='p-play'>治愈系奇幻校园恋</div>
+                                   </div>
+                                </div>
+                               <div class='yk-col4-1'>
+                                   <div class='yk-pack he47 md20'>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/0515000058BF6531ADB912EC6F000E2F.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>30集全</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>我的狐仙老婆</div>
+                                       <div class='p-play'>我家有只小狐狸</div>
+                                   </div>
+                                   <div class='yk-pack he47'>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/0515000058BF67FFADC0B0059E0ACF4A.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>36集全</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>校花前传之很纯很暧昧</div>
+                                       <div class='p-play'>学渣逆袭拯救女神</div>
+                                   </div>
+                                </div>    
                            </div>
+                            
+                           <div class='yk-row'>
+                                <div class='yk-inner'>
+                                    <div class='yk-slide'>
+                                        <div class='modslide'>
+                                            <div class='mbtn prev' style='dispaly:block'>
+                                                <a href='#' class='icon-font'></a>
+                                            </div>
+                                            <div class='mbtn next'>
+                                                <a href='#' class='icon-font'></a>
+                                            </div>
+                                            <div class='paneel'>
+                                                <div class='yk-col4 '>
+                                                    <div class='yk-pack he35'>
+                                                      <div class='p-thumb'>
+                                                        <img class='sm-pic' src='img/200110.jpg'>
+                                                       </div>
+                                                      <div class='p-info'>本节目由玛丽黛佳冠名</div>
+                                                    </div>
+                                                 </div> 
+                                                 <div class='yk-col4'>
+                                                    <div class='yk-pack he35'>
+                                                      <div class='p-thumb'>
+                                                        <img class='sm-pic' src='img/200-110.jpg'>
+                                                       </div>
+                                                      <div class='p-info'>苏菲520告白剧场</div>
+                                                    </div>
+                                                 </div> 
+                                                <div class='yk-col4'>
+                                                    <div class='yk-pack he35'>
+                                                      <div class='p-thumb'>
+                                                        <img class='sm-pic' src='img/200-110-3.jpg'>
+                                                       </div>
+                                                      <div class='p-info'>梁文道带你读好书</div>
+                                                    </div>
+                                                 </div>
+                                                <div class='yk-col4'>
+                                                    <div class='yk-pack he47'>
+                                                      <div class='p-thumb'>
+                                                        <img class='sm-pic' src='img/200-110 (1).jpg'>
+                                                       </div>
+                                                      <div class='p-info'>杨幂郑爽甜蜜互撩</div>
+                                                    </div>
+                                                 </div>
+                                                <div class='yk-col4'>
+                                                    <div class='yk-pack he35'>
+                                                      <div class='p-thumb'>
+                                                        <img class='sm-pic' src='img/200X110-1.jpg'>
+                                                       </div>
+                                                      <div class='p-info'>星厨系列&nbsp;邀你品鉴</div>
+                                                    </div>
+                                                 </div>
+                                                <div class='yk-col4'>
+                                                    <div class='yk-pack he35'>
+                                                      <div class='p-thumb'>
+                                                        <img class='sm-pic' src='img/zhutijuchangrukou-xin.jpg'>
+                                                       </div>
+                                                      <div class='p-info'>天猫理想生活狂欢节</div>
+                                                    </div>
+                                                 </div>
+                                                <div class='yk-col4'>
+                                                    <div class='yk-pack he47'>
+                                                      <div class='p-thumb'>
+                                                        <img class='sm-pic' src='img/200x110.jpg'>
+                                                       </div>
+                                                      <div class='p-info'>曼妥思吴磊靓相封面</div>
+                                                    </div>
+                                                 </div>
+                                                <div class='yk-col4'>
+                                                    <div class='yk-pack he35'>
+                                                      <div class='p-thumb'>
+                                                        <img class='sm-pic' src='img/200-110-1.jpg'>
+                                                       </div>
+                                                      <div class='p-info'>陈乔恩王凯重返23岁</div>
+                                                    </div>
+                                                 </div>
+                                                <div class='yk-col4'>
+                                                    <div class='yk-pack he35'>
+                                                      <div class='p-thumb'>
+                                                        <img class='sm-pic' src='img/200110 (1).jpg'>
+                                                       </div>
+                                                      <div class='p-info'>别光看，来疯玩</div>
+                                                    </div>
+                                                 </div>
+                                                 <div class='yk-col4'>
+                                                    <div class='yk-pack he35'>
+                                                      <div class='p-thumb'>
+                                                        <img class='sm-pic' src='img/200-110 (2).jpg'>
+                                                       </div>
+                                                      <div class='p-info'>惠普电脑鲜肉老师专场</div>
+                                                    </div>
+                                                 </div>
+                                                 <div class='yk-col4'>
+                                                    <div class='yk-pack he35'>
+                                                      <div class='p-thumb'>
+                                                        <img class='sm-pic' src='img/200-100-jinxing.jpg'>
+                                                       </div>
+                                                      <div class='p-info'>金星独挑大梁麻辣点评</div>
+                                                    </div>
+                                                 </div>
+                                                 
+                                                 
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             
                </div>
               </div>
              </div>
             </div>
-           </div>
-            
+</div>
+            <div class='mod mod-new' style='dispaly:block;'>                           
+            <div class='yk-row'>
+                <div class='yk-col20'>
+                   <div class='mod'>
+                        <div class='h'>
+                            <div class='title-box'>
+                                    <img class='yk-title' src='img/051000005706326467BC3D382308E5E8.png'>
+                                    <div class='text4'>电影 ></div>
+                                    <ul class='tab'>
+                                        <li class='current'>
+                                            <a rel='1' hidefocus='true'>最新</a>
+                                        </li>
+                                        <li class>
+                                            <a rel='2' hidefocus='true'>每日策划</a>
+                                        </li>
+                                        <li class>
+                                            <a rel='3' hidefocus='true'>好莱坞</a>
+                                        </li>
+                                        <li class>
+                                            <a rel='4' hidefocus='true'>预告片</a>
+                                        </li>
+                                        <li class>
+                                            <a rel='5' hidefocus='true'>网络电影</a>
+                                        </li>
+                                        <li class>
+                                            <a rel='6' hidefocus='true'>独播影院</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                       </div>
+                        <div class='c'>
+                           <div class='yk-row tab-c' style='display:block;'>
+                               <div class='yk-row yk-row-sm'>
+                                   <div class='modslide'>
+                                       <div class='mbtn prev' style='display:none'>
+                                           <a href='#' class='icon-font'></a>
+                                       </div>
+                                       <div class='mbtn next' style='display:block'>
+                                           <a href='#' class='icon-font'></a>
+                                       </div>
+                                       <div class='paneel' style='width:2413px;left:0'>
+                                           <li class='yk-col4 pack-film'>
+                                               <div class='yk-pack'>
+                                                   <div class='p-thumb'>
+                                                       <img class='sm-pic' src='img/051600005865F45967BC3C69A9066466.jpg'>
+                                                       <div class='time'>
+                                                            <span class='time-style'>正片</span>
+                                                       </div>
+                                                       <div class='sm-play'>
+                                                            <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                                       </div>
+                                                   </div>
+                                                   <div class='p-info'>一路顺风</div>
+                                                   <div class='p-play'>邓紫棋音乐青春励志片</div>
+                                                </div>
+                                           </li>
+                                           <li class='yk-col4 pack-film'>
+                                               <div class='yk-pack'>
+                                                   <div class='p-thumb'>
+                                                       <img class='sm-pic' src='img/05160000586240F367BC3C7C0E08DF2B.jpg'>
+                                                       <div class='time'>
+                                                            <span class='time-style'>正片</span>
+                                                       </div>
+                                                       <div class='sm-play'>
+                                                            <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                                       </div>
+                                                   </div>
+                                                   <div class='p-info'>乘风破浪</div>
+                                                   <div class='p-play'>邓超穿越见证父母爱情</div>
+                                                </div>
+                                           </li>
+                                           <li class='yk-col4 pack-film'>
+                                               <div class='yk-pack'>
+                                                   <div class='p-thumb'>
+                                                       <img class='sm-pic' src='img/051600005837DEC167BC3C638106D701.jpg'>
+                                                       <div class='time'>
+                                                            <span class='time-style'>正片</span>
+                                                       </div>
+                                                       <div class='sm-play'>
+                                                            <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                                       </div>
+                                                   </div>
+                                                   <div class='p-info'>超级快递</div>
+                                                   <div class='p-play'>陈赫宋智孝斗国际大盗</div>
+                                                </div>
+                                           </li>
+                                           <li class='yk-col4 pack-film'>
+                                               <div class='yk-pack'>
+                                                   <div class='p-thumb'>
+                                                       <div class='p-thumb-taglt'>
+                                                           <span class='ico-it'>独播</span>
+                                                       </div>
+                                                       <img class='sm-pic' src='img/0516000058ABB759ADBAC3D72D0D571A.jpg'>
+                                                       <div class='time'>
+                                                            <span class='time-style'>正片</span>
+                                                       </div>
+                                                       <div class='sm-play'>
+                                                            <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                                       </div>
+                                                   </div>
+                                                   <div class='p-info'>魔弦传说</div>
+                                                   <div class='p-play'>美式制作日本风宝莲灯</div>
+                                                </div>
+                                           </li>
+                                           <li class='yk-col4 pack-film'>
+                                               <div class='yk-pack'>
+                                                   <div class='p-thumb'>
+                                                       <img class='sm-pic' src='img/05160000581C5F9A67BC3C728E069EB6.jpg'>
+                                                       <div class='time'>
+                                                            <span class='time-style'>正片</span>
+                                                       </div>
+                                                       <div class='sm-play'>
+                                                            <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                                       </div>
+                                                   </div>
+                                                   <div class='p-info'>冲天火</div>
+                                                   <div class='p-play'>吴彦祖张静初再续前缘</div>
+                                                </div>
+                                           </li>
+                                           <li class='yk-col4 pack-film'>
+                                               <div class='yk-pack'>
+                                                   <div class='p-thumb'>
+                                                       <div class='p-thumb-taglt'>
+                                                           <span class='ico-it'>专题</span>
+                                                       </div>
+                                                       <img class='sm-pic' src='img/05160000591BCB98ADB91238A00A8DD3.jpg'>
+                                                       <div class='time'>
+                                                            <span class='time-style'>正片</span>
+                                                       </div>
+                                                       <div class='sm-play'>
+                                                            <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                                       </div>
+                                                   </div>
+                                                   <div class='p-info'>第70届戛纳电影节</div>
+                                                   <div class='p-play'>20部大师作品承包全年逼格</div>
+                                                </div>
+                                           </li>
+                                           <li class='yk-col4 pack-film'>
+                                               <div class='yk-pack'>
+                                                   <div class='p-thumb'>
+                                                       <img class='sm-pic' src='img/05160000584A87B867BC3C04D00308BC.jpg'>
+                                                       <div class='time'>
+                                                            <span class='time-style'>正片</span>
+                                                       </div>
+                                                       <div class='sm-play'>
+                                                            <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                                       </div>
+                                                   </div>
+                                                   <div class='p-info'>合约男女</div>
+                                                   <div class='p-play'>郑秀文张孝全浪漫情缘</div>
+                                                </div>
+                                           </li>
+                                           <li class='yk-col4 pack-film'>
+                                               <div class='yk-pack'>
+                                                   <div class='p-thumb'>
+                                                       <img class='sm-pic' src='img/051600005927D229ADC0AE06C70EA71C.jpg'>
+                                                       <div class='time'>
+                                                            <span class='time-style'>正片</span>
+                                                       </div>
+                                                       <div class='sm-play'>
+                                                            <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                                       </div>
+                                                   </div>
+                                                   <div class='p-info'>星映话</div>
+                                                   <div class='p-play'>加勒比海盗5</div>
+                                                </div>
+                                           </li>
+                                           <li class='yk-col4 pack-film'>
+                                               <div class='yk-pack'>
+                                                   <div class='p-thumb'>
+                                                       <img class='sm-pic' src='img/051600005927AB32ADC0AE06C30DFE5E.jpg'>
+                                                       <div class='time'>
+                                                            <span class='time-style'>正片</span>
+                                                       </div>
+                                                       <div class='sm-play'>
+                                                            <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                                       </div>
+                                                   </div>
+                                                   <div class='p-info'>yo~酷戛纳</div>
+                                                   <div class='p-play'>林青霞邓丽君戛纳海滩裸泳</div>
+                                                </div>
+                                           </li>
+                                           <li class='yk-col4 pack-film'>
+                                               <div class='yk-pack'>
+                                                   <div class='p-thumb'>
+                                                       <img class='sm-pic' src='img/0516000059196352ADC0B0787F044E13.jpg'>
+                                                       <div class='time'>
+                                                            <span class='time-style'>正片</span>
+                                                       </div>
+                                                       <div class='sm-play'>
+                                                            <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                                       </div>
+                                                   </div>
+                                                   <div class='p-info'>王牌逗王牌</div>
+                                                   <div class='p-play'>刘德华黄晓明爆笑夺冠</div>
+                                                </div>
+                                           </li>
+                                           <li class='yk-col4 pack-film'>
+                                               <div class='yk-pack'>
+                                                   <div class='p-thumb'>
+                                                       <img class='sm-pic' src='img/051600005865F45967BC3C69A9066466.jpg'>
+                                                       <div class='time'>
+                                                            <span class='time-style'>正片</span>
+                                                       </div>
+                                                       <div class='sm-play'>
+                                                            <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                                       </div>
+                                                   </div>
+                                                   <div class='p-info'>比利.林恩的中场故事</div>
+                                                   <div class='p-play'>李安和他的西线无战事</div>
+                                                </div>
+                                           </li>
+                                           <li class='yk-col4 pack-film'>
+                                               <div class='yk-pack'>
+                                                   <div class='p-thumb'>
+                                                       <img class='sm-pic' src='img/05160000584A574567BC3C3A87070DA0.jpg'>
+                                                       <div class='time'>
+                                                            <span class='time-style'>正片</span>
+                                                       </div>
+                                                       <div class='sm-play'>
+                                                            <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                                       </div>
+                                                   </div>
+                                                   <div class='p-info'>罗曼蒂克消亡史</div>
+                                                   <div class='p-play'>葛优饰黑佬叱咤上海</div>
+                                                </div>
+                                           </li>
+                                           <li class='yk-col4 pack-film'>
+                                               <div class='yk-pack'>
+                                                   <div class='p-thumb'>
+                                                       <img class='sm-pic' src='img/051600005857C85367BC3D52BA0BB6FF.jpg'>
+                                                       <div class='time'>
+                                                            <span class='time-style'>正片</span>
+                                                       </div>
+                                                       <div class='sm-play'>
+                                                            <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                                       </div>
+                                                   </div>
+                                                   <div class='p-info'>血战钢锯岭</div>
+                                                   <div class='p-play'>军医开挂死神手中救人</div>
+                                                </div>
+                                           </li>
+                                           <li class='yk-col4 pack-film'>
+                                               <div class='yk-pack'>
+                                                   <div class='p-thumb'>
+                                                       <img class='sm-pic' src='img/05160000591430D8ADB91269EC015A2C.jpg'>
+                                                       <div class='time'>
+                                                            <span class='time-style'>正片</span>
+                                                       </div>
+                                                       <div class='sm-play'>
+                                                            <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                                       </div>
+                                                   </div>
+                                                   <div class='p-info'>阿米尔汗作品集</div>
+                                                   <div class='p-play'>“摔跤爸爸”拯救百万女性</div>
+                                                </div>
+                                           </li>
+                                                
+                                       </div>
+                                   </div>
+                                        
+                               </div>
+                               </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                                       </div>                  
             <div class='mod mod-new' style='dispaly:block;'>
             <div class='yk-row'>
                 <div class='yk-col20'>
@@ -636,7 +1108,20 @@
                         <div class='h'>
                             <div class='title-box'>
                                     <img class='yk-title' src='img/051000005774B26767BC3D6F040CA0A9.png'>
-                                    <div class='text4'>动漫</div>
+                                    <div class='text4'>动漫 ></div>
+                                    <ul class='tab'>
+                                        <li class='current'>
+                                            <a rel='1' hidefocus='true'>博人传</a>
+                                        </li>
+                                        <li class>
+                                            <a rel='2' hidefocus='true'>英雄学院</a>
+                                        </li>
+                                        <li class>
+                                            <a rel='3' hidefocus='true'>柯南</a>
+                                        </li>
+                                        <li class>
+                                            <a rel='4' hidefocus='true'>新番放送表</a>
+                                        </li>
                             </div>
                        </div>
                         <div class='c'>
@@ -644,6 +1129,9 @@
                                <div class='yk-col4'>
                                    <div class='yk-pack he47'>
                                        <div class='p-thumb'>
+                                           <div class='p-thumb-taglt'>
+                                                   <span class='ico-it'>VIP</span>
+                                               </div>
                                            <img class='sm-pic' src='img/051000005921A7068B6C58045E091EB3.gif'>
                                            <div class='time'>
                                                <span class='time-style'>更新至7<span>
@@ -723,9 +1211,113 @@
         </div>
   </div>
                     </div>
-                </div>
-                
-                <div class='mod mod-new' style='dispaly:block;'>
+                </div>       
+            <div class='mod mod-new' style='dispaly:block;'>
+            <div class='yk-row'>
+                <div class='yk-col20'>
+                   <div class='mod'>
+                        <div class='h'>
+                            <div class='title-box'>
+                                    <img class='yk-title' src='img/051000005774B26767BC3D6F040CA0A9.png'>
+                                    <div class='text4'>少儿 ></div>
+                                    <ul class='t-text'>
+                                        <li>
+                                            <a rel='1' hidefocus='true'>宝迪学英文</a>
+                                        </li>
+                                        <li>
+                                            <a rel='2' hidefocus='true'>奇妙故事会</a>
+                                        </li>
+                                        <li>
+                                            <a rel='3' hidefocus='true'>小小优酷APP</a>
+                                        </li>
+                            </div>
+                       </div>
+                        <div class='c'>
+                           <div class='yk-row'>
+                               <div class='yk-col4'>
+                                   <div class='yk-pack he47'>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/05100000591EB9BC8B6C57044F00E4BC.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>更新至21<span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>巴啦啦小魔仙之飞越彩灵堡</div>
+                                       <div class='p-play'>1，429万次播放</div>
+                                   </div>
+                                </div>
+                               <div class='yk-col4'>
+                                   <div class='yk-pack he47'>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/05100000587334C067BC3D7DDA0B1B80.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>130集全</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>企鹅家族</div>
+                                       <div class='p-play'>4.0亿次播放</div>
+                                   </div>
+                                </div>
+                               <div class='yk-col4'>
+                                   <div class='yk-pack he47'>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/1100641F4657E9DF07C79E2F2B70CE66FBA08D-6A14-3F52-F7BE-B79CACB86650.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>26集全</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>汪汪队立大功 第二季</div>
+                                       <div class='p-play'>2.5亿次播放</div>
+                                   </div>
+                                </div>
+                               <div class='yk-col4'>
+                                   <div class='yk-pack he47'>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/051000005785BBB967BC3D1B43049434.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>26集全</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>动物兄弟 第四集</div>
+                                       <div class='p-play'>1.2亿次播放</div>
+                                   </div>
+                                </div>
+                               <div class='yk-col4'>
+                                   <div class='yk-pack he47'>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/05100000579EC3DA67BC3D2BFC0D3A63.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>26集全</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>星学院II月灵手环</div>
+                                       <div class='p-play'>1.8亿次播放</div>
+                                   </div>
+                                </div>
+                               
+                           </div>
+                            
+        </div>
+        </div>
+  </div>
+                    </div>
+                </div> 
+            <div class='mod mod-new' style='dispaly:block;'>
             <div class='yk-row'>
                 <div class='yk-col20'>
                    <div class='mod'>
@@ -733,10 +1325,7 @@
                             <div class='yk-col9'>
                                 <div class='title-box'>
                                     <img class='yk-title' src='img/051000005733F43E67BC3D3002057401.png'>
-                                    <div class='text4'>自频道精选</div>
-                                </div>
-                                <div class='change'>
-                                    <i class="iconfont icon-huanyihuan" style='color:#878787'></i>
+                                    <div class='text4'>自频道精选 ></div>
                                 </div>
                             </div>
                         </div>
@@ -748,193 +1337,263 @@
                                            <dl class='user-level'>
                                                <dt>
                                                    <a>
-                                                   <img src='img/0130391F4556FC9366A1E412011CFE80759A54-258D-1DCD-4E01-BB761F110E45.jpg'>
+                                                   <img src='img/0130391F485617A7892D4C018B41F2D84ED88F-7735-5106-318C-E23471C52D9A.png'>
                                                    </a>
                                                </dt>
                                                <dd class='u-name'>
-                                                   <a>电影最top</a>
+                                                   <a>香港电影时代</a>
                                                </dd>
                                            </dl>
                                        </div>
                                        <div class='p-thumb'>
-                                           <img class='sm-pic' src='img/btv.jpg'>
+                                           <img class='sm-pic' src='img/05420101592AD5DCADC95B85BC4078A4.jpg'>
                                            <div class='time'>
-                                               <span class='time-style'>27:59</span>
+                                               <span class='time-style'>27:51</span>
                                            </div>
                                            <div class='sm-play'>
                                                <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
                                            </div>
                                        </div>
-                                       <div class='p-info'>盘点电影十大心碎时刻</div>
-                                       <div class='p-play'>4.6万次播放 94次评论</div>
+                                       <div class='p-info'>香港电影十大经典警匪片</div>
+                                       <div class='p-play'>21.0万次播放 39次评论</div>
                                    </div>
-                                   <div class='yk-pack md20'>
+                                   <div class='yk-pack he74 md20'>
+                                       <div class='p-user'>
+                                           <dl class='user-level'>
+                                               <dt>
+                                                   <a>
+                                                   <img src='img/0130391F4556E03A75BBD2001A9E9E0DB57931-F171-7079-7887-0A8612891271.jpg'>
+                                                   </a>
+                                               </dt>
+                                               <dd class='u-name'>
+                                                   <a>文日小强</a>
+                                               </dd>
+                                           </dl>
+                                       </div>
                                        <div class='p-thumb'>
-                                           <img class='sm-pic' src='img/05410408591DB0AE1E58375CCF031C76.jpg'>
+                                           <img class='sm-pic' src='img/05150000592F8092ADC0AE06C509277A.jpg'>
                                            <div class='time'>
-                                               <span class='time-style'>01:18</span>
+                                               <span class='time-style'>09:10</span>
                                            </div>
                                            <div class='sm-play'>
                                                <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
                                            </div>
                                        </div>
-                                       <div class='p-info'>新财经20170518财经脱口秀：外国人不吃小龙虾？谣言！高清</div>
-                                       <div class='p-play'>344次播放  0次评论</div>
-                                   </div>
-                                </div>
-                               <div class='yk-col4'>
-                                   <div class='yk-pack md20'>
-                                       <div class='p-thumb'>
-                                           <img class='sm-pic' src='img/054105085913260B1F885A467D0C499F.jpg'>
-                                           <div class='time'>
-                                               <span class='time-style'>04:46</span>
-                                           </div>
-                                           <div class='sm-play'>
-                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
-                                           </div>
-                                       </div>
-                                       <div class='p-info'>母亲节送这个，比送花什么的强多了</div>
-                                       <div class='p-play'>13.23万次播放 143次评论</div>
-                                   </div>
-                                   <div class='yk-pack md20'>
-                                       <div class='p-thumb'>
-                                           <img class='sm-pic' src='img/05410408585BE7276A0A40045C728EA6.jpg'>
-                                           <div class='time'>
-                                               <span class='time-style'>04:58</span>
-                                           </div>
-                                           <div class='sm-play'>
-                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
-                                           </div>
-                                       </div>
-                                       <div class='p-info'>WESG2016全球总决赛场馆及周边指南</div>
-                                       <div class='p-play'>225.6万次播放  11次评论</div>
+                                       <div class='p-info'>8分钟速读科幻作品<吞食者></div>
+                                       <div class='p-play'>2.0万次播放 55次评论</div>
                                    </div>
                                 </div>
                                <div class='yk-col4'>
-                                   <div class='yk-pack md20'>
+                                   <div class='yk-pack he74 md20'>
+                                       <div class='p-user'>
+                                           <dl class='user-level'>
+                                               <dt>
+                                                   <a>
+                                                   <img src='img/0130391F45573C308AD98435B2FF7E0BD59FF0-FA5A-D7D0-54FE-0336A3821685.jpg'>
+                                                   </a>
+                                               </dt>
+                                               <dd class='u-name'>
+                                                   <a>罐头视频</a>
+                                               </dd>
+                                           </dl>
+                                       </div>
                                        <div class='p-thumb'>
-                                           <img class='sm-pic' src='img/05410408591DAEFE1E598A5297015A8C.jpg'>
+                                           <img class='sm-pic' src='img/05420101592E664E8B32558FCBBEB475.jpg'>
                                            <div class='time'>
-                                               <span class='time-style'>00:20</span>
+                                               <span class='time-style'>01:41</span>
                                            </div>
                                            <div class='sm-play'>
                                                <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
                                            </div>
                                        </div>
-                                       <div class='p-info'>江西鹰潭致12人死亡重大交通事故肇事司机被刑拘</div>
-                                       <div class='p-play'>598次播放 0次评论</div>
+                                       <div class='p-info'>小时候我们活的这么扎心</div>
+                                       <div class='p-play'>370次播放 3次评论</div>
                                    </div>
-                                   <div class='yk-pack md20'>
+                                   <div class='yk-pack he74 md20'>
+                                       <div class='p-user'>
+                                           <dl class='user-level'>
+                                               <dt>
+                                                   <a>
+                                                   <img src='img/0510000059265AA6ADB912072C0ABC9F.jpg'>
+                                                   </a>
+                                               </dt>
+                                               <dd class='u-name'>
+                                                   <a>爱日不日</a>
+                                               </dd>
+                                           </dl>
+                                       </div>
                                        <div class='p-thumb'>
-                                           <img class='sm-pic' src='img/05410408591DB5CB1D8C0630240E3281.jpg'>
+                                           <img class='sm-pic' src='img/0542010159280AE4ADD01697B471EB18.jpg'>
                                            <div class='time'>
-                                               <span class='time-style'>43:14</span>
+                                               <span class='time-style'>01:59</span>
                                            </div>
                                            <div class='sm-play'>
                                                <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
                                            </div>
                                        </div>
-                                       <div class='p-info'>生命源 170424 高清版</div>
-                                       <div class='p-play'>526次播放  4次评论</div>
+                                       <div class='p-info'>美女被侵犯怪穿着太清凉？</div>
+                                       <div class='p-play'>168次播放 0次评论</div>
                                    </div>
                                 </div>
                                <div class='yk-col4'>
-                                   <div class='yk-pack md20'>
+                                   <div class='yk-pack he74 md20'>
+                                       <div class='p-user'>
+                                           <dl class='user-level'>
+                                               <dt>
+                                                   <a>
+                                                   <img src='img/05FF0D0157A496BB64209F0CAF6B4305.jpg'>
+                                                   </a>
+                                               </dt>
+                                               <dd class='u-name'>
+                                                   <a>六石印象</a>
+                                               </dd>
+                                           </dl>
+                                       </div>
                                        <div class='p-thumb'>
-                                           <img class='sm-pic' src='img/05410408591DAE3F1E5906373103FBFF.jpg'>
+                                           <img class='sm-pic' src='img/05420101592DA1BD8B32558FC963E1A1.jpg'>
                                            <div class='time'>
-                                               <span class='time-style'>01:58</span>
+                                               <span class='time-style'>09:40</span>
                                            </div>
                                            <div class='sm-play'>
                                                <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
                                            </div>
                                        </div>
-                                       <div class='p-info'>晚间新闻报道20170518新闻万象 大快人心 海南海口 欺客宰客</div>
-                                       <div class='p-play'>260次播放 0次评论</div>
+                                       <div class='p-info'>西游中天下第一妖是谁</div>
+                                       <div class='p-play'>4,650次播放 9次评论</div>
                                    </div>
-                                   <div class='yk-pack md20'>
+                                   <div class='yk-pack he74 md20'>
+                                       <div class='p-user'>
+                                           <dl class='user-level'>
+                                               <dt>
+                                                   <a>
+                                                   <img src='img/0510000058FAF756AD9E073B0702CA10.jpg'>
+                                                   </a>
+                                               </dt>
+                                               <dd class='u-name'>
+                                                   <a>哔哔秀工坊</a>
+                                               </dd>
+                                           </dl>
+                                       </div>
                                        <div class='p-thumb'>
-                                           <img class='sm-pic' src='img/054101015904A7D5ADC95B69BE516AA4.jpg'>
+                                           <img class='sm-pic' src='img/05420101592785228B324C7C2523E27D.jpg'>
                                            <div class='time'>
-                                               <span class='time-style'>02:47</span>
+                                               <span class='time-style'>02:55</span>
                                            </div>
                                            <div class='sm-play'>
                                                <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
                                            </div>
                                        </div>
-                                       <div class='p-info'>中国一杀手锏武器被卫星曝光！美国这次终于感到后怕了</div>
-                                       <div class='p-play'>19.96万次播放  83次评论</div>
+                                       <div class='p-info'>盘点周杰伦等贵圈护妻狂魔</div>
+                                       <div class='p-play'>1.0万次播放 23次评论</div>
+                                   </div>
+                                </div>
+                               <div class='yk-col4'>
+                                   <div class='yk-pack he74 md20'>
+                                       <div class='p-user'>
+                                           <dl class='user-level'>
+                                               <dt>
+                                                   <a>
+                                                   <img src='img/0510000058D4BAB7ADC0AE05B804AE45.jpg'>
+                                                   </a>
+                                               </dt>
+                                               <dd class='u-name'>
+                                                   <a>薛定饿了吗</a>
+                                               </dd>
+                                           </dl>
+                                       </div>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/05150000592F845FADC0AE06BE0698F2.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>03:36</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>灰姑娘的衣橱里藏着谁</div>
+                                       <div class='p-play'>93次播放 2次评论</div>
+                                   </div>
+                                   <div class='yk-pack he74 md20'>
+                                       <div class='p-user'>
+                                           <dl class='user-level'>
+                                               <dt>
+                                                   <a>
+                                                   <img src='img/0130391F455639A89C5804309417763A44445D-9D66-11AD-47A3-B8CB7242073C.jpg'>
+                                                   </a>
+                                               </dt>
+                                               <dd class='u-name'>
+                                                   <a>毒舌电影</a>
+                                               </dd>
+                                           </dl>
+                                       </div>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/05150000592E2392ADC0B006D304D475.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>08:26</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>5分钟复习<加勒比海盗>1-4</div>
+                                       <div class='p-play'>9.5万次播放 65次评论</div>
                                    </div>
                                 </div>
                                 <div class='yk-col4'>
-                                    <div class='topic'>
-                                        <img class='topic-img' src='img/0510000057342DFE67BC3D2E590C7E43.png'>
-                                        <div class='topic-info'>
-                                            <div class='topic-head'>来疯</div>
-                                            <div class='topic-body'>热门主播</div>
-                                            <div class='topic-body'>来疯APP</div>
-                                        </div>
-                                    </div>
-                                    <div class='topic'>
-                                        <img class='topic-img' src='img/051000005714C74B67BC3D284E01375B.png'>
-                                        <div class='topic-info'>
-                                            <div class='topic-head'>话题</div>
-                                            <div class='topic-body'>热门话题</div>
-                                            <div class='topic-body'>创建话题</div>
-                                        </div>
-                                    </div>
-                                    <div class='topic'>
-                                        <img class='topic-img' src='img/0510000057354EB567BC3D7D0F03DF23.png'>
-                                        <div class='topic-info'>
-                                            <div class='topic-head'>直播</div>
-                                            <div class='topic-body'>优酷直播</div>
-                                            <div class='topic-body'>全部直播</div>
-                                        </div>
-                                    </div>
-                                    <div class='topic'>
-                                        <img class='topic-img' src='img/051000005733F43E67BC3D3002057401.png'>
-                                        <div class='topic-info'>
-                                            <div class='topic-head'>自频道</div>
-                                            <div class='topic-body'>社区论坛</div>
-                                            <div class='topic-body'>视频学院</div>
-                                        </div>
-                                    </div>
-                                    <div class='topic'>
-                                        <img class='topic-img' src='img/05100000569CA70567BC3D41B0009F1A.png'>
-                                        <div class='topic-info'>
-                                            <div class='topic-head'>众筹</div>
-                                            <div class='topic-body'>最新项目</div>
-                                            <div class='topic-body'>发起项目</div>
-                                        </div>
-                                    </div>
-                                    <div class='topic'>
-                                        <img class='topic-img' src='img/0510000057342B2867BC3D2E7E0191D1.png'>
-                                        <div class='topic-info'>
-                                            <div class='topic-head'>玩游戏</div>
-                                            <div class='topic-body'>青云志</div>
-                                            <div class='topic-body'>蓝月传奇</div>
-                                        </div>
-                                    </div>
-                                    <div class='topic'>
-                                        <img class='topic-img' src='img/051000005884320C67BC3D10F90332F2.png'>
-                                        <div class='topic-info'>
-                                            <div class='topic-head'>优酷VR</div>
-                                            <div class='topic-body'>VR APP</div>
-                                            <div class='topic-body'>精彩内容</div>
-                                        </div>
-                                    </div>
-                                    <div class='topic'>
-                                        <img class='topic-img' src='img/05100000575797D467BC3D65D80626D1.png'>
-                                        <div class='topic-info'>
-                                            <div class='topic-head'>其他</div>
-                                            <div class='topic-body'>小小优酷</div>
-                                            <div class='topic-body'>玩刷APP</div>
-                                        </div>
-                                    </div>
-                                </div>     
+                                   <div class='yk-pack he74 md20'>
+                                       <div class='p-user'>
+                                           <dl class='user-level'>
+                                               <dt>
+                                                   <a>
+                                                   <img src='img/0130391F4855B78585F5510002F66236795EF0-E2A5-72D4-2DD1-596E101C39D2.png'>
+                                                   </a>
+                                               </dt>
+                                               <dd class='u-name'>
+                                                   <a>OMG笑吧</a>
+                                               </dd>
+                                           </dl>
+                                       </div>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/05420101592D39EFADC95B970EA10E70.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>04:40</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>中英小时候看的动画片一样吗？</div>
+                                       <div class='p-play'>1,722次播放 13次评论</div>
+                                   </div>
+                                   <div class='yk-pack he74 md20'>
+                                       <div class='p-user'>
+                                           <dl class='user-level'>
+                                               <dt>
+                                                   <a>
+                                                   <img src='img/0130391F4554E0CC8DC46907BF09486A459DEB-1EEF-45E5-AA67-1EE3A80FB2CB.jpg'>
+                                                   </a>
+                                               </dt>
+                                               <dd class='u-name'>
+                                                   <a>QM工作室</a>
+                                               </dd>
+                                           </dl>
+                                       </div>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/05420101592D8748ADD0168448C22B36.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>02:20</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>笑哭！萌宠表情包来袭</div>
+                                       <div class='p-play'>5,322次播放 10次评论</div>
+                                   </div>
+                                </div>    
                            </div>
                            <div class='yk-row'>
-                               <div class='box-1'>
+                               <div class='box-3'>
                                    <div class='left-bt'>广告</div>
                                </div>
                            </div>
@@ -943,9 +1602,127 @@
                     </div>
                 </div>
             </div>          
-            </div>
-                
-                <div class='mod mod-new' style='dispaly:block;'>
+            </div>   
+            <div class='mod mod-new' style='dispaly:block;'>
+            <div class='yk-row'>
+                <div class='yk-col20'>
+                   <div class='mod'>
+                        <div class='h'>
+                            <div class='title-box'>
+                                    <img class='yk-title' src='img/05100000570632EA67BC3D6B300CE915.png'>
+                                    <div class='text4'>娱乐 ></div>
+                            </div>
+                       </div>
+                        <div class='c'>
+                           <div class='yk-row'>
+                               <div class='yk-col8'>
+                                   <div class='yk-pack1 ma'>
+                                       <div class='p-thumb'>
+                                           <img class='lg-pic' src='img/050C0000592D0066AD9E0707B30A57F6.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>更新至05-28</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>丫蛋玩潜伏赵本山越看越开心</div>
+                                       <div class='p-play'>笑声传奇 第一季</div>
+                                   </div>
+                                </div>
+                               <div class='yk-col4'>
+                                   <div class='yk-pack he47 md20'>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/05150000592A774BADC0B006C3071E7A.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>7集全</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>岳云鹏大胆表白“苍老师”</div>
+                                       <div class='p-play'>德云社岳来越好专场演出</div>
+                                   </div>
+                                   <div class='yk-pack he47'>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/051500005926C0F0ADC0B006C00CE47E.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>7集全</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>孟鹤堂妖娆演绎三生三世</div>
+                                       <div class='p-play'>德云三宝全国巡演</div>
+                                   </div>
+                                </div>
+                               <div class='yk-col4'>
+                                   <div class='yk-pack he47 md20'>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/05150000592F7CB3AD9E0707AD0B7F08.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>更新至05-31</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>萌翻！软妹子自曝饿到吃草坪</div>
+                                       <div class='p-play'>非常完美 2017</div>
+                                   </div>
+                                   <div class='yk-pack he47'>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/05150000592B81E9ADC0AE06BB01997E.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>更新至05-28</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>娜扎江疏影爆发分歧闹不和</div>
+                                       <div class='p-play'>花儿与少年 第三季</div>
+                                   </div>
+                                </div>
+                               <div class='yk-col4'>
+                                   <div class='yk-pack he47 md20'>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/05100000592F7106ADB912072B0F3A3B.gif'>
+                                           <div class='time'>
+                                               <span class='time-style'>更新至05-17</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>“朱碧石”遭帅哥下跪示爱</div>
+                                       <div class='p-play'>2017快男全国赛抢先看</div>
+                                   </div>
+                                   <div class='yk-pack he47'>
+                                       <div class='p-thumb'>
+                                           <img class='sm-pic' src='img/05150000592CB045ADB912073E0734D6.jpg'>
+                                           <div class='time'>
+                                               <span class='time-style'>更新至05-27</span>
+                                           </div>
+                                           <div class='sm-play'>
+                                               <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
+                                           </div>
+                                       </div>
+                                       <div class='p-info'>金曲杀！动力火车VS梁咏琪</div>
+                                       <div class='p-play'>我想和你唱2</div>
+                                   </div>
+                                </div>
+                               
+                           </div>
+                            
+        </div>
+        </div>
+  </div>
+                    </div>
+                </div>   
+            <div class='mod mod-new' style='dispaly:block;'>
             <div class='yk-row'>
                 <div class='yk-col20'>
                    <div class='mod'>
@@ -1013,7 +1790,7 @@
                                                <img class='little-pic' src='img/05100000585A30CB67BC3D2037022435.png'>
                                            </div>
                                        </div>
-                                       <div class='p-info'>人马的名义 TV版</div>
+                                       <div class='p-info'>人名的名义 TV版</div>
                                        <div class='p-play'>陆毅领衔汉东boys反腐天团</div>
                                    </div>
                                 </div>
@@ -1037,9 +1814,8 @@
                                    </div>
                                    </div>
                                </div>
-                            </div>
-                      
-                <div class='mod mod-new' style='dispaly:block;'>
+                            </div>          
+            <div class='mod mod-new' style='dispaly:block;'>
                    <div class='yk-row'>
                 <div class='yk-col20'>
                    <div class='mod'>
@@ -1134,7 +1910,7 @@
                        </div>
                     </div>
                 </div>
-                <div class='mod mod-new' style='dispaly:block;'>
+            <div class='mod mod-new' style='dispaly:block;'>
                    <div class='yk-row'>
                 <div class='yk-col20'>
                    <div class='mod'>
@@ -1214,7 +1990,7 @@
                        </div>
                     </div>
                 </div>
-                <div class='mod mod-new' style='dispaly:block;'>
+            <div class='mod mod-new' style='dispaly:block;'>
                    <div class='yk-row'>
                 <div class='yk-col20'>
                    <div class='mod'>
@@ -1309,7 +2085,7 @@
                        </div>
                     </div>
                 </div>
-                <div class='mod mod-new' style='dispaly:block;'>
+            <div class='mod mod-new' style='dispaly:block;'>
                    <div class='yk-row'>
                 <div class='yk-col20'>
                    <div class='mod'>
@@ -1389,7 +2165,7 @@
                        </div>
                     </div>
                 </div>
-                <div class='mod mod-new' style='dispaly:block;'>
+            <div class='mod mod-new' style='dispaly:block;'>
                    <div class='yk-row'>
                 <div class='yk-col20'>
                    <div class='mod'>
@@ -1484,10 +2260,16 @@
                        </div>
                     </div>
                 </div>
+        </div>
+     </div>
+            <div class='yk-discovery'>
+                    <div class='type'>
+                        <p>“嘘~去”<a>发现</a>“点更好玩的呗~”</p>
+                    </div>
+                </div>
+     </div>
                 
-                </div>
-                </div>
-                <div class='g-foot'>
+            <div class='g-foot'>
                     <dl class='g-w1'>
                         <dt>
                             <a>大优酷事业群</a>
@@ -1635,4 +2417,83 @@
                         <a class='aut-7'>暴恐音视频<br>举报专区</a>
                     </div>
                 </div>
+            <div class='side-bar'>
+                     <div class='feedback'><a></a></div> 
+                     <div class='goTop' style='display:block;'>
+                        <img width='29' height='65' src='img/05100000575CCAF767BC3D4B250267B7.gif'>
+                     </div>
+                </div>
+            <div class='yk-logpop'>
+                    <div>
+                        <div class='yk-logwrap normal'>
+                            <div class='yk-close'>x</div>
+                            <div class='yk-log-container'>
+                                <div class='log-main'>
+                                    <div class='log-qr-btn'></div>
+                                    <div class='log-head'>
+                                        <div class='log-head-title'>账号登录</div>
+                                        <div class='change-log'>
+                                            <span>手机快捷登录></span>
+                                        </div>
+                                    </div>
+                                    <div class='log-body'>
+                                      <div class='yk-form normal-log'>
+                                        <div class='log-form-group first-group'>
+                                            <input type='text' class='yk-form-input'>
+                                            <label class='yk-form-label'>
+                                                <span class='yk-form-tips yk-1-account-tips'>手机/邮箱/优酷土豆账号</span>
+                                            </label>
+                                        </div>
+                                        <div class='log-form-group'>
+                                            <input type='text' class='yk-form-input'>
+                                            <label class='yk-form-label'>
+                                                <span class='yk-form-tips yk-1-account-tips'>登录密码</span>
+                                                <span class=''
+                                            </label>
+                                        </div>
+                                        <div class='log-form-group yk-remember'>
+                                            <a class='yk-fr'>忘记密码？</a>
+                                            <label for='yk-ykremember'>
+                                                <input type='checkbox' checked='checked'>'&nbsp;'<span>记住我</span>
+                                            </label>
+                                        </div>
+                                        <div class='log-form-group yk-btn-group'>
+                                            <button type='submit' class='yk-form-btn'>登录</button>
+                                        </div>
+                                      </div>
+                                       
+                                    </div>
+                                    <div class='log-foot has'>
+                                         <a class='yk-registe-btn'>注册</a>
+                                         <div class='yk-third-type'>
+                                             <span class='yk-text'>其他方式：</span>
+                                             <div class='yk-third-part-wrap'>
+                                                  <span class='yk-third-part-item'>
+                                                      <a class='yk-1-icon icon-qq'></a>
+                                                  </span>
+                                                  <span class='yk-third-part-item'>
+                                                      <a class='yk-1-icon icon-weibo'></a>
+                                                  </span>
+                                                  <span class='yk-third-part-item'>
+                                                      <a class='yk-1-icon icon-zhifubao'></a>
+                                                  </span>
+                                                  <span class='yk-third-part-item'>
+                                                      <a class='yk-1-icon icon-taobao'></a>
+                                                  </span>
+                                                  <span class='yk-third-part-item'>
+                                                      <a class='yk-1-icon icon-weixin'></a>
+                                                  </span>
+                                             </div>
+                                         </div>
+                                    </div>
+                                </div>     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class='yk-backface'></div> 
   </body>
+  <script type="text/javascript" src="js/qimo.js"></script>
+</html>
+  
+                   
